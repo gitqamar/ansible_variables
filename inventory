@@ -1,0 +1,9 @@
+[centos]   # this is the group name
+node1   # this is the machine ip/FQDN
+node2
+node3
+# the above can be written as 
+# node[1:3]
+
+[linux:children]   # this  is called as parent child relationship
+centos  # here the hosts specified in the [centos] will be used.  

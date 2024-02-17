@@ -28,3 +28,11 @@
       ansible.builtin.group:
         name: dev
         state: present
+
+    - name: Create user caaount
+      ansible.builtin.user:
+        name: "{{ item.name }}"
+        state: present
+        append: true
+        groups: "{{ item.group }}"
+      loop: "{{ list_of_users }}"

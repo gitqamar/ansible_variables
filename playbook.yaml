@@ -23,3 +23,8 @@
   tasks:
     - name: Ping the nodes
       ansible.builtin.ping:
+
+    - name: Create new group
+      ansible.builtin.group:
+        name: dev
+        state: present

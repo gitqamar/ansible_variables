@@ -40,11 +40,11 @@ ansible-navigator:
   images:
     details:
     - everything
-  logging:
-    append: true
-    file: /home/student/ansible_examples/ansible_varialbles/ansible-navigator.log
-    level: warning
-  mode: stdout
+#  logging:
+#    append: true
+#    file: /home/student/ansible_examples/ansible_varialbles/ansible-navigator.log
+#    level: warning
+#  mode: stdout
   playbook-artifact:
     enable: true
     save-as: '{playbook_dir}/artifacts/{playbook_name}-artifact-{time_stamp}.json'
